@@ -10,7 +10,7 @@ Check out the live demo of Videotube in action!
 
 ## 📂 Project Features
 
-- **User Authentication**: Secure login and signup.
+- **User Authentication**: Secure login and signup with otp authentication.
 - **Video Upload & Edit**: Upload and edit videos, powered by **Cloudinary**.
 - **Like, Comment, Subscribe**: Engage with video content via likes, comments, and subscriptions.
 - **Channel Tweets**: Unique feature allowing channel owners to tweet updates directly to their subscribers.
@@ -47,11 +47,24 @@ Check out the live demo of Videotube in action!
    Create a `.env` file in the `server` directory and add the following:
 
    ```env
-   MONGO_URI=<Your MongoDB URI>
-   CLOUDINARY_CLOUD_NAME=<Your Cloudinary Cloud Name>
-   CLOUDINARY_API_KEY=<Your Cloudinary API Key>
-   CLOUDINARY_API_SECRET=<Your Cloudinary API Secret>
-   JWT_SECRET=<Your JWT Secret>
+   PORT = 8000 
+  CORS_ORIGIN= 
+
+  MAIL_HOST = 
+  MAIL_USER = 
+  MAIL_PASS = 
+
+  DB_NAME= videotube
+  MONGODB_URI=
+
+  ACCESS_TOKEN_SECRET=
+  ACCESS_TOKEN_EXPIRY=
+  REFRESH_TOKEN_SECRET=
+  REFRESH_TOKEN_EXPIRY =
+
+  CLOUDINARY_CLOUD_NAME = 
+  CLOUDINARY_API_KEY = 
+  CLOUDINARY_SECRET_KEY = 
    ```
 
 4. **Run the application**
@@ -61,16 +74,16 @@ Check out the live demo of Videotube in action!
    ```bash
    # Run backend
    cd server
-   npm run dev
+   npm start
 
    # Run frontend
    cd client
-   npm start
+   npm run dev
    ```
 
 5. **Access the application**
 
-   The application should be running on [http://localhost:3000](http://localhost:3000).
+   The application should be running on [http://localhost:5173](http://localhost:5173).
 
 ## 🛠️ Features Breakdown
 
